@@ -1,0 +1,17 @@
+server:
+  port: 8093
+
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+  server:
+    evictionIntervalTimerInMs: 6
+    responseCacheUpdateIntervalMs: 6
+#    enableSelfPreservation: false
+    enableSelfPreservation: true
+
+logging:
+  level:
+    com.netflix.eureka: off
+    com.netflix.discovery: off
